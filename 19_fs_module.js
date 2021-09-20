@@ -17,6 +17,7 @@ const dirAsync = fs.readdir('./', function(err, files){
 // console.log(dirAsync);       // This statement shouldn't be mentioned as readdir() would directly produce output, 
 // once encountered. This can be compared with the characteristic of print() function of any language.
 console.log("***********************************************");     // This statement isn't getting interpreted!! Why???
+// fs.readdir('@', function(err, files){
 fs.readdir('./', function(err, files){
     if(err) console.log("Error encountered 2: ", err);
     else console.log("Files found 2: ", files);
